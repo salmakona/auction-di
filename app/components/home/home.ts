@@ -1,7 +1,9 @@
 import {Component} from '@angular/core';
-import {Product, ProductService} from 'app/services/product-service';
-import CarouselComponent from '../carousel/carousel';
-import ProductItemComponent from '../product-item/product-item';
+import {Product} from '../../services/product-service';
+import {ProductService} from '../../services/product-service';
+import {FilterPipe} from '../pipes/filter-pipe';
+import 'rxjs/add/operator/debounceTime';
+import {FormControl} from '@angular/forms';
 /*
 @Component({
   selector: 'auction-home-page',
